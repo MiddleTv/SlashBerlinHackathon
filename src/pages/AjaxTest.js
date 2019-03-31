@@ -12,12 +12,12 @@ class AjaxTest extends Component {
 
     buildList =(data)=>{
         console.log(data);
-        this.setState({list: data.main.temp})
+        this.setState({list: data})
     }
 
 
     componentDidMount(){
-        let url = 'http://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&appid=0775e588b19b40d03486fc8437456434';
+        let url = 'http://localhost:5000/user/exist/monji';
         fetch(url)
         .then(response => response.json())
         .then(this.buildList)
@@ -27,16 +27,7 @@ class AjaxTest extends Component {
     render(){
         return (
             <div className ="FormRight">
-                <ul>
-                   
-                 <h3>{this.state.temp}</h3>
-                    
-                    
-                
-                </ul>
-                {this.state.error &&
-                    <h3>{this.state.error}</h3>
-                }
+                 
             </div>
         )
     }

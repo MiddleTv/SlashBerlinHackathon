@@ -53,17 +53,22 @@
 .FormRight {
   width: 50%;
   overflow: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(47, 49, 161);
 }
 
 .FormLeft {
   width: 50%;
 }
-
+  
 .FormTitle {
-  color: #707C8B;
+  color: #000000;
   font-weight: 300;
   margin-bottom: 25px;
+}
+
+.FormTable {
+  color: #FFFFFF;
+  overflow: auto;
 }
 
 .FormTitle__Link {
@@ -86,6 +91,10 @@
 
 .FormField {
   margin-bottom: 40px;
+}
+
+.FormFieldRadio {
+  margin-bottom: 10px;
 }
 
 .FormField__Label {
@@ -131,7 +140,7 @@
 }
 
 .FormField__CheckboxLabel {
-  color: #646F7D;
+  color: rgb(255, 255, 255);
   font-size: .9em;
 }
 
